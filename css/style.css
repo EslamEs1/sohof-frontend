@@ -185,7 +185,7 @@ a {
 }
 
 footer {
-    background-color: #f8f9fa;
+    background-color: var(--background-color);
     color: #666;
 }
 footer a {
@@ -1078,4 +1078,332 @@ footer svg{
         j
     }
 }
+
+
+.landing-testimonials {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+.landing-testimonials img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.landing-testimonials::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the opacity as needed */
+    z-index: 1; /* Ensure the overlay is above the image */
+}
+
+.landing-testimonials .info{
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2; /* Ensure the text is above the overlay */
+    width: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .landing-testimonials .info{
+        width: 100%;
+    }
+}
+
+
+.testimonials-section {
+    padding: 60px 20px;
+}
+
+.testimonials-section .testimonial-box {
+    background-color: rgb(228, 245, 242);
+    border-radius: 10px;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    min-height: 400px;
+}
+
+.testimonials-section .testimonial-box:hover {
+    transform: translateY(-10px);
+}
+
+.testimonials-section .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonials-section h5 {
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--main-color);
+}
+
+.testimonials-section span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+
+.testimonials-section p {
+    color: #666;
+    line-height: var(--line-height);
+}
+
+
+
+
+/* corses    */
+.courses-section {
+    padding: 100px 0;
+}
+
+
+.course-box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.048);
+    text-align: center;
+    margin: 30px 0;
+    transition: transform 0.3s;
+    min-height: 600px;
+}
+
+.course-box:hover {
+    transform: translateY(-10px);
+}
+
+.course-box img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.course-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.course-box p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.main-button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.main-button:hover {
+    background-color: var(--main2-color);
+    color: #fff;
+}
+
+
+
+/* .course-detail-section */
+.course-detail-section {
+    padding: 100px 0;
+}
+
+.course-detail-section h1{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.course-detail-section h3 {
+    margin-top: 20px;
+    color: var(--main2-color);
+}
+
+.course-detail-section p, .course-detail-section ul {
+    color: #666;
+}
+
+.course-detail-section ul {
+    padding-left: 20px;
+}
+
+.course-detail-section li {
+   line-height: var(--line-height);
+}
+
+
+
+.ask-question-form {
+    padding: 50px 0;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    margin-bottom: 100px;
+}
+
+.ask-question-form h2 {
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ask-question-form p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.ask-question-form .form-group {
+    margin-bottom: 20px;
+}
+
+.ask-question-form .btn-primary {
+    background-color: var(--main-color);
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.ask-question-form .btn-primary:hover {
+    background-color: var(--main2-color);
+}
+
+
+
+
+.star-rating svg{
+    display: ;
+    color: #FFD700; /* Gold color for stars */
+    margin: 0 2px;
+}
+
+
+/* contact  */
+.contact{
+    padding-top: 100px;
+}
+
+
+.contact .main-title{
+    margin-bottom: 70px;
+}
+
+
+.contact img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.contact .contact-info{
+    background-color: var(--accentary-bg-color);
+    padding: 20px;
+    color:#fff;
+    height: 500px;
+}
+
+.contact .contact-info h3{
+    color:#f1f1f1;
+    text-align: center;
+
+}
+
+.contact .contact-info p:first-of-type{
+    color:#f1f1f1;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact .ask-question h2{
+    color: var(--main-color);
+    text-align: center;
+}
+
+.contact .ask-question p{
+    color: #666;
+    text-align: center;
+}
+
+.contact .ask-question input{
+    margin-bottom: 15px;
+
+}
+
+.contact .ask-question button{
+    background-color: var(--main-color);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.contact .ask-question button:hover{
+    background-color: var(--main2-color);
+}
+
+.contact .contact-info svg{
+    transition: fill 0.3s;
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+
+
+.contact .social-media a svg{
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: color 0.3s;
+    border: 1px solid var(--accent-color);
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.contact .social-media a svg:hover{
+    color: var(--accent-hover-color);
+}
+
+
+.falling-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    animation: fall 3s ease-in-out forwards;
+    opacity: 0;
+    position: relative;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 
