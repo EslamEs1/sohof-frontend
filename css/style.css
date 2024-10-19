@@ -1407,3 +1407,262 @@ footer svg{
 
 
 
+/* Pricint  */
+
+.pricing-duration-buttons {
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.duration-btn {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 10px 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+
+
+.duration-btn.active {
+    background-color: var(--main-color);
+    color: white;
+}
+
+#pricing-plans{
+    padding-bottom: 150px;
+}
+
+#pricing-plans .plan {
+    display: none; /* Hide all plans initially */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    border-top: 3px solid var(--main-color);
+}
+
+#pricing-plans .plan.active {
+    display: block; /* Show only active plans */
+}
+
+#pricing-plans .plan-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#pricing-plans .plan ul li {
+    margin: 15px 0;
+}
+
+#pricing-plans .plan-header h3{
+    color: var(--main-color);
+}
+
+#pricing-plans .plan-header .old-price {
+    text-decoration: line-through; /* Adds a line through the old price */
+    color: #999; /* Optional: Change color to grey for the old price */
+    margin-right: 10px; /* Optional: Space between old and new price */
+    font-size: 17px; /* Optional: Adjust font size */
+}
+
+#pricing-plans .plan-header h4 {
+    color: var(--accent-color); /* Change color for the new price */
+    font-weight: bold; /* Make the new price bold */
+    font-size: 35px; /* Optional: Adjust font size */
+}
+
+#pricing-plans .plan ul li svg{
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+#pricing-plans a {
+    display: block;
+    padding:7px 0;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: var(--accent-color);
+    color: #fff;
+
+}
+
+#pricing-plans a:hover{
+    background-color: var(--accent-hover-color);
+}
+
+
+
+.popular-badge {
+    position: absolute; /* لجعلها عائمة */
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    left: 50%; /* توسيط الشارة */
+    transform: translateX(-50%); /* توسيطها بالكامل */
+    bottom: -65px; /* تحديد المسافة من أسفل صندوق الخطة */
+    z-index: 1; /* لضمان ظهورها فوق العناصر الأخرى */
+}
+
+
+
+/* إضافة شكل الحبل */
+.popular-badge:before {
+    content: '';
+    position: absolute;
+    width: 4px; /* سمك الحبل */
+    height: 20px; /* طول الحبل */
+    background-color: var(--accent-color); /* لون الحبل */
+    bottom: 100%; /* تحديد موضع الحبل ليكون فوق الشارة */
+    left: 50%;
+    transform: translateX(-50%); /* توجيه الحبل */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+}
+
+
+
+@media (min-width:991px){
+    #pricing-plans .most-popular{
+    transform: scale(1.1);
+    margin:0 10px;
+}
+
+}
+
+/* blogs  */
+
+.blogs{
+    padding: 100px 0;
+}
+
+
+.blogs .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+
+.blogs .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.blogs .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.blogs .card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Sidebar specific styling */
+.blogs .card {
+    margin-bottom: 20px;
+}
+
+.blogs .list-unstyled li img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+/* Featured courses and latest articles list */
+.blogs .list-unstyled  {
+    padding-left: 0;
+}
+
+.blogs .list-unstyled  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.blogs .list-unstyled  ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.blogs .form-group {
+        position: relative;
+    }
+
+.blogs .form-group input[type="text"] {
+    padding-right: 40px;
+}
+
+.blogs .form-group button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #888;
+}
+
+.blogs .form-group button:hover {
+    color: #333;
+}
+
+
+/* free-trail  */
+.free-trail{
+    padding: 100px 0;
+    background-image: url("../img/Free-Trial-sohof.jpg");
+    background-size: cover;
+
+}
+
+.free-trail .form-group{
+    margin: 20px 0;
+}
+
+.free-trail-item{
+    position: relative;
+    padding-bottom: 600px;
+}
+
+#free-trail-form{
+    background-color: var(--background-color);
+    padding: 40px;
+    width: 50%;
+    position: absolute;
+    right: -10%;
+    border-radius: 15px;
+    border-top: 5px solid var(--main-color);
+}
+
+#free-trail-form .main-button{
+    border: 0;
+    padding:7px 20px;
+}
+
+#free-trail-form .main-title{
+    padding-bottom: 30px;
+}
+
+#free-trail-form .main-title p{
+    font-size: 15px;
+}
+
+@media (max-width:891px){
+    #free-trail-form{
+        right: 0;
+        width: 100%;
+    }
+
+}

@@ -24,9 +24,11 @@
     <meta name="twitter:image" content="https://www.yoursite.com/images/logo.png">
     <meta name="twitter:site" content="@Sohof Quran">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+
     <link href="css/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" type="image/x-icon">
 
@@ -47,7 +49,7 @@
 </head>
 
 <body>
-     <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container d-flex align-items-center">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +58,7 @@
             <a class="navbar-brand mx-auto" href="#">
                 <img src="img/logo.png" alt="logo" id="navbar-logo">
             </a>
-            
+
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -100,71 +102,38 @@
         </div>
     </nav>
 
-    <div class="course-detail-section">
+    <div class="free-trail">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="800">
-                    <img src="img/landing.png" alt="Quran Learning Course" class="img-fluid">
-                </div>
-                <div class="col-md-8">
-                    <h1>Quran Learning Course</h1>
-                    <div class="star-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="free-trail-item">
+                <form id="free-trail-form">
+                    <div class="main-title">
+                        <h2>Book Free Trial</h2>
+                        <p>Fill in the form & The assigned tutor will contact you to confirm the appointment of a free trial lesson with you.</p>
                     </div>
-
-                    <h3>Course Overview</h3>
-                    <p>This course will help you to learn the basics of the Quran reading Bascis online with the best Quran tutors on the internet. Learn how to read Quranic Arabic letters, words, verses, complete surah, and eventually become able to learn to read quran online without mistakes. You will also learn how Arabic letters are linked together or separated. And how to read words, then short sentences and long sentences. It is significant to know that Arabic provides diacritics which tells you how to read Arabic words, so you do not need to memorize their pronouncing.</p>
-                    
-                    <h3>What You'll Learn</h3>
-                    <ul>
-                        <li>Are you a Muslim who feels disconnected from the Islamic World, the Holy Quran, and its teachings? Do you strive to understand the true essence of the Quran? Are you a new convert who is eager to interpret the message of Allah, and understand and abide by Islam in its entirety? Are you a struggling Muslim who wishes to reconnect to his/her roots, regain faith, and find himself and Allah through the Quran? Has this world and its worldly affairs detached you from Allah and the basics of His book? You have landed the right place.</li>
-                        <li>Being a Muslim and a believer, but unaware of the roots of your religion is petty. Not to be able to represent yourself and your religion in gatherings because you do not know enough is embarrassing. Have you deprived yourself of the Quran and its teachings? The book is sent down upon to you. It’s key for us to live our life. It constitutes light and guidance for us. The life you’ve lived in the absence of the Quran is a life gone astray, but now is the time. It’s finally time to reconnect yourself to the basics reading quran online and make your life worthwhile. Now is when you can find a solid reason and the goal of your existence. Prophet Muhammad (SAW) said:</li>
-                        <li>The hadith emphasizes the importance of gaining knowledge about the Quran and worshipping in the light of that knowledge.</li>
-                    </ul>
-                    <h3>Course Duration</h3>
-                    <p>Flexible schedules with classes available 24/7 to fit your time zone and preferences.</p>
-
-                </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="fullName" placeholder="ex. Ahmad Muhammad" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="ex. Ahmad@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="course" required>
+                            <option value="quran-reading">Quran Reading Basics</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="notes" rows="3" placeholder="Enter any additional notes here..."></textarea>
+                    </div>
+                    <button type="submit" class="main-button">Submit Request</button>
+                </form>
             </div>
         </div>
     </div>
 
 
-    <div class="ask-question-form">
-        <div class="container">
-            <div class="main-title">
-                <h2>Ask a Question</h2>
-                <p>Fill in the contact form, and we’ll get back to you.</p>
-            </div>
-            <form action="your-form-handler-url" method="POST">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Full Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="number" class="form-control" id="phone" name="phone" placeholder="Your phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Question</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your question here" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
 
     <a href="https://wa.me/1845643229" target="_blank" class="whatsapp-float">
         <img src="img/icons8-whatsapp-48.png" alt="WhatsApp" class="whatsapp-icon">
@@ -225,9 +194,12 @@
     </footer>
 
 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="js/aos.js"></script>
     <script>
-    AOS.init();
+        AOS.init();
     </script>
     <script src="js/all.min.js"></script>
     <script src="js/jquery.js"></script>
